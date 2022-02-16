@@ -214,4 +214,4 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [product-screenshot2]: images/screenshot2.png
 [output1]: output/slide147.jpg
 [output2]: output/slide407.jpg
-[output3]: output/slide64
+[output3]: output/slide641.jpg
