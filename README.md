@@ -32,7 +32,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/foltysM/Recording2Slides">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/LOGO.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Recording to Slides</h3>
@@ -67,7 +67,7 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#installation and usage">Installation</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -123,7 +123,7 @@ This is how to run the software on your PC. </br >
 To get a local copy up and running follow these simple example steps.
 
 
-### Installation
+### Installation and usage
 
 1. Clone the repo
    ```commandline
@@ -137,20 +137,9 @@ To get a local copy up and running follow these simple example steps.
    ```python
    VIDEO_NAME = 'test2.mp4'
    ```
+4. Run program
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- ROADMAP -->
@@ -225,4 +214,4 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [product-screenshot2]: images/screenshot2.png
 [output1]: output/slide147.jpg
 [output2]: output/slide407.jpg
-[output3]: output/slide641.jpg
+[output3]: output/slide64
