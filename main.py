@@ -1,13 +1,12 @@
 import cv2 as cv
 import numpy as np
 
-import sys
-import random
 
-THRESHOLD = 95
+THRESHOLD = 95  # this should be set by user
+VIDEO_NAME = 'test2.mkv'
 
 
-cap = cv.VideoCapture('test2.mp4')
+cap = cv.VideoCapture(VIDEO_NAME)
 i, last_i = 0, 0
 frame_list = []
 
@@ -24,8 +23,7 @@ cv.namedWindow("Preview", cv.WINDOW_KEEPRATIO)
 while True:
     ret, frame30 = cap.read()
     if not ret:
-        print("A problem")
-        break
+        raise FileExistsError("Problem with reading the file")
 
     imr = cv.resize(frame30, (480, 270))
     cv.imshow("Preview", imr)
