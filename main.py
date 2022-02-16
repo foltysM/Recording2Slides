@@ -1,6 +1,11 @@
 import cv2 as cv
 import numpy as np
 
+import sys
+import random
+
+THRESHOLD = 95
+
 
 cap = cv.VideoCapture('test2.mp4')
 i, last_i = 0, 0
@@ -19,13 +24,14 @@ cv.namedWindow("Preview", cv.WINDOW_KEEPRATIO)
 while True:
     ret, frame30 = cap.read()
     if not ret:
+        print("A problem")
         break
 
     imr = cv.resize(frame30, (480, 270))
     cv.imshow("Preview", imr)
 
     diff = cv.absdiff(frame30, last_frame)
-    # cv.imshow("diff", diff)
+
     last_frame = frame30
 
     diff_hsv = cv.cvtColor(diff, cv.COLOR_BGR2HSV)
@@ -35,7 +41,7 @@ while True:
 
     black_percent = (mask_black > 0).mean()
     print(black_percent)
-    if black_percent < 0.95 and j > 80:
+    if black_percent < THRESHOLD/100 and j > 80:
         cv.imwrite('slide' + str(j) + '.jpg', frame30)
     j += 1
     blacks.append(black_percent)
